@@ -31,19 +31,12 @@ function App() {
   })
 
   return (
-    <div className="app">
-      <h1>Budget Tracker</h1>
+    <div className="app-container">
+      <h1 className="app-title">MON€Y</h1>
       <Balance transactions={transactions} />
-      <div className="main-content">
-        <TransactionForm onAdd={addTransaction} />
-        <div className="list-section">
-          <Filter filter={filter} onFilterChange={setFilter} />
-          <TransactionList
-            transactions={filteredTransactions}
-            onDelete={deleteTransaction}
-          />
-        </div>
-      </div>
+      <Filter filter={filter} setFilter={setFilter} />
+      <TransactionForm addTransaction={addTransaction} />
+      <TransactionList transactions={filteredTransactions} onDelete={deleteTransaction} />
     </div>
   )
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f2f5;
   color: #333;
   min-height: 100vh;
@@ -20,8 +20,16 @@ body {
 /* ---- App ---- */
 .app h1 {
   text-align: center;
+  font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
+  color: #1a1a2e;
+}
+.app-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1.5rem 0;
   color: #1a1a2e;
 }
 
@@ -63,7 +71,7 @@ body {
 }
 
 .balance-card.total {
-  border-top: 4px solid #6c63ff;
+  border-top: 4px solid #ffd063;
 }
 
 .balance-card.income {
@@ -122,7 +130,7 @@ body {
 
 .form-group input:focus,
 .form-group select:focus {
-  border-color: #6c63ff;
+  border-color: #7aff63;
 }
 
 .form-error {
@@ -137,7 +145,7 @@ body {
 .btn-add {
   width: 100%;
   padding: 0.65rem;
-  background: #6c63ff;
+  background: #197e2a;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -149,7 +157,7 @@ body {
 }
 
 .btn-add:hover {
-  background: #574fd6;
+  background: #197e2a;
 }
 
 /* ---- Filter ---- */
@@ -178,13 +186,13 @@ body {
 }
 
 .filter-btn:hover {
-  border-color: #6c63ff;
-  color: #6c63ff;
+  border-color: #197e2a;
+  color: #197e2a;
 }
 
 .filter-btn.active {
-  background: #6c63ff;
-  border-color: #6c63ff;
+  background: #197e2a;
+  border-color: #197e2a;
   color: #fff;
   font-weight: 600;
 }
