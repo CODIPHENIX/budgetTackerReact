@@ -7,7 +7,7 @@ const defaultForm = {
   date: new Date().toISOString().split('T')[0],
 }
 
-function TransactionForm({ onAdd }) {
+function TransactionForm({ addTransaction }) {
   const [form, setForm] = useState(defaultForm)
   const [error, setError] = useState('')
 
@@ -31,7 +31,7 @@ function TransactionForm({ onAdd }) {
       return
     }
     setError('')
-    onAdd({ ...form, amount: parseFloat(form.amount) })
+    addTransaction({ ...form, amount: parseFloat(form.amount) })
     setForm(defaultForm)
   }
 
